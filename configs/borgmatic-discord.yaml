@@ -1,0 +1,19 @@
+# Added to /etc/borgmatic/config.yaml
+apprise:
+    services:
+        - url: https://discord.com/api/webhooks/xxxxxxxx/xxxxxxxx
+          label: discord
+    start:
+        title: Ping! (Triton)
+        body: Starting backup process.
+    finish:
+        title: Ping! (Triton)
+        body: Backups successfully made.
+    fail:
+        title: Ping! (Triton)
+        body: Your backups have failed.
+    states:
+        - start
+        - finish
+        - fail
+    logs_size_limit: 25
