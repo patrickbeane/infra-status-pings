@@ -15,7 +15,7 @@ headers:
   Content-Type: application/json
 
 
-# then, comment out on /etc/crowdsec/profiles.yaml
+# Enable Discord notifications by uncommenting this block
 
 notifications:
   - discord
