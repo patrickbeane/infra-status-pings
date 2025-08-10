@@ -14,8 +14,10 @@ method: POST
 headers:
   Content-Type: application/json
 
-
+#
 # Enable Discord notifications by uncommenting this block
+# /etc/crowdsec/profiles.yaml
+#
 
 notifications:
   - discord
